@@ -1,2 +1,23 @@
 CMakeLists.txt.user
 
+build/.vs/
+build/_deps/
+build/core/Debug/
+build/core/Release/
+build/core/ZXing.dir/Debug/
+build/core/ZXing.dir/Release/
+build/example/ZXingReader.dir/Release/
+build/example/ZXingWriter.dir/Debug/
+build/example/ZXingWriter.dir/Release/
+build/test/blackbox/ReaderTest.dir/Release/
+build/test/blackbox/Release/
+build/test/blackbox/WriterTest.dir/Debug/
+build/test/blackbox/WriterTest.dir/Release/
+build/Win32/Release/
+build/x64/
+build/test/blackbox/ReaderTest.dir/Debug/
+build/example/Release/
+build/test/blackbox/Debug/
+build/example/ZXingReader.dir/Debug/
+build/example/Debug/
+build/Release/
