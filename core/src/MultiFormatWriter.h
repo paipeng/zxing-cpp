@@ -20,6 +20,12 @@
 
 #include <string>
 
+#ifdef FILENAME_EXPORTS
+#define FILENAME_API __declspec(dllexport)
+#else
+#define FILENAME_API __declspec(dllimport)
+#endif
+
 namespace ZXing {
 
 class BitMatrix;
@@ -38,7 +44,7 @@ public:
 	/**
 	* Used for Aztec, PDF417, and QRCode only.
 	*/
-	MultiFormatWriter& setEncoding(CharacterSet encoding) {
+	FILENAME_API MultiFormatWriter& setEncoding(CharacterSet encoding) {
 		_encoding = encoding;
 		return *this;
 	}
@@ -46,7 +52,7 @@ public:
 	/**
 	* Used for Aztec, PDF417, and QRCode only, [0-8].
 	*/
-	MultiFormatWriter& setEccLevel(int level) {
+	FILENAME_API MultiFormatWriter& setEccLevel(int level) {
 		_eccLevel = level;
 		return *this;
 	}
@@ -54,12 +60,12 @@ public:
 	/**
 	* Used for all formats, sets the minimum number of quiet zone pixels.
 	*/
-	MultiFormatWriter& setMargin(int margin) {
+	FILENAME_API MultiFormatWriter& setMargin(int margin) {
 		_margin = margin;
 		return *this;
 	}
 
-	BitMatrix encode(const std::wstring& contents, int width, int height) const;
+	FILENAME_API BitMatrix encode(const std::wstring& contents, int width, int height) const;
 
 private:
 	BarcodeFormat _format;

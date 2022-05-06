@@ -19,16 +19,22 @@
 #include <cstdint>
 #include <string>
 
+#ifdef FILENAME_EXPORTS
+#define FILENAME_API __declspec(dllexport)
+#else
+#define FILENAME_API __declspec(dllimport)
+#endif
+
 namespace ZXing {
 namespace TextUtfEncoding {
 
-std::string ToUtf8(const std::wstring& str);
-std::string ToUtf8(const std::wstring& str, const bool angleEscape);
-std::wstring FromUtf8(const std::string& utf8);
+	FILENAME_API std::string ToUtf8(const std::wstring& str);
+	FILENAME_API std::string ToUtf8(const std::wstring& str, const bool angleEscape);
+FILENAME_API std::wstring FromUtf8(const std::string& utf8);
 
-void ToUtf8(const std::wstring& str, std::string& utf8);
-void AppendUtf16(std::wstring& str, const uint16_t* utf16, size_t length);
-void AppendUtf8(std::wstring& str, const uint8_t* utf8, size_t length);
+FILENAME_API void ToUtf8(const std::wstring& str, std::string& utf8);
+FILENAME_API void AppendUtf16(std::wstring& str, const uint16_t* utf16, size_t length);
+FILENAME_API void AppendUtf8(std::wstring& str, const uint8_t* utf8, size_t length);
 
 template <typename T>
 bool IsUtf16HighSurrogate(T c)

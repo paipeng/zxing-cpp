@@ -19,6 +19,11 @@
 #include "ImageView.h"
 #include "Result.h"
 
+#ifdef FILENAME_EXPORTS
+#define FILENAME_API __declspec(dllexport)
+#else
+#define FILENAME_API __declspec(dllimport)
+#endif
 namespace ZXing {
 
 /**
@@ -28,10 +33,10 @@ namespace ZXing {
  * @param hints  optional DecodeHints to parameterize / speed up decoding
  * @return #Result structure
  */
-Result ReadBarcode(const ImageView& buffer, const DecodeHints& hints = {});
+	FILENAME_API Result ReadBarcode(const ImageView& buffer, const DecodeHints& hints = {});
 
 // WARNING: this API is experimental and may change/disappear
-Results ReadBarcodes(const ImageView& buffer, const DecodeHints& hints = {});
+	FILENAME_API Results ReadBarcodes(const ImageView& buffer, const DecodeHints& hints = {});
 
 } // ZXing
 
