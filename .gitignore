@@ -21,3 +21,7 @@ build/test/blackbox/Debug/
 build/example/ZXingReader.dir/Debug/
 build/example/Debug/
 build/Release/
+build/test/blackbox/
+build/Testing/Temporary/
+build/CMakeFiles/3.23.1/x64/
+build/CMakeFiles/3.23.1/CompilerIdCXX/Debug/
