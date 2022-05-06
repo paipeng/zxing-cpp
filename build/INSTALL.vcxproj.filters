@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\paipeng\Documents\zxing-cpp\build\CMakeFiles\e240f6e2af920e411ec79bf300d1ad65\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{2710BF6B-3404-3E7E-B201-82699254C347}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

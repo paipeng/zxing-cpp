@@ -1,0 +1,36 @@
+# CMake generated Testfile for 
+# Source directory: C:/Users/paipeng/Documents/zxing-cpp/example
+# Build directory: C:/Users/paipeng/Documents/zxing-cpp/build/example
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+if("${CTEST_CONFIGURATION_TYPE}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+  add_test(ZXingReaderTest "C:/Users/paipeng/Documents/zxing-cpp/build/example/Debug/ZXingReader.exe" "-fast" "-format" "qrcode" "C:/Users/paipeng/Documents/zxing-cpp/test/samples/qrcode-1/1.png")
+  set_tests_properties(ZXingReaderTest PROPERTIES  _BACKTRACE_TRIPLES "C:/Users/paipeng/Documents/zxing-cpp/example/CMakeLists.txt;11;add_test;C:/Users/paipeng/Documents/zxing-cpp/example/CMakeLists.txt;0;")
+elseif("${CTEST_CONFIGURATION_TYPE}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+  add_test(ZXingReaderTest "C:/Users/paipeng/Documents/zxing-cpp/build/example/Release/ZXingReader.exe" "-fast" "-format" "qrcode" "C:/Users/paipeng/Documents/zxing-cpp/test/samples/qrcode-1/1.png")
+  set_tests_properties(ZXingReaderTest PROPERTIES  _BACKTRACE_TRIPLES "C:/Users/paipeng/Documents/zxing-cpp/example/CMakeLists.txt;11;add_test;C:/Users/paipeng/Documents/zxing-cpp/example/CMakeLists.txt;0;")
+elseif("${CTEST_CONFIGURATION_TYPE}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+  add_test(ZXingReaderTest "C:/Users/paipeng/Documents/zxing-cpp/build/example/MinSizeRel/ZXingReader.exe" "-fast" "-format" "qrcode" "C:/Users/paipeng/Documents/zxing-cpp/test/samples/qrcode-1/1.png")
+  set_tests_properties(ZXingReaderTest PROPERTIES  _BACKTRACE_TRIPLES "C:/Users/paipeng/Documents/zxing-cpp/example/CMakeLists.txt;11;add_test;C:/Users/paipeng/Documents/zxing-cpp/example/CMakeLists.txt;0;")
+elseif("${CTEST_CONFIGURATION_TYPE}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+  add_test(ZXingReaderTest "C:/Users/paipeng/Documents/zxing-cpp/build/example/RelWithDebInfo/ZXingReader.exe" "-fast" "-format" "qrcode" "C:/Users/paipeng/Documents/zxing-cpp/test/samples/qrcode-1/1.png")
+  set_tests_properties(ZXingReaderTest PROPERTIES  _BACKTRACE_TRIPLES "C:/Users/paipeng/Documents/zxing-cpp/example/CMakeLists.txt;11;add_test;C:/Users/paipeng/Documents/zxing-cpp/example/CMakeLists.txt;0;")
+else()
+  add_test(ZXingReaderTest NOT_AVAILABLE)
+endif()
+if("${CTEST_CONFIGURATION_TYPE}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+  add_test(ZXingWriterTest "C:/Users/paipeng/Documents/zxing-cpp/build/example/Debug/ZXingWriter.exe" "qrcode" "I have the best words." "test.png")
+  set_tests_properties(ZXingWriterTest PROPERTIES  _BACKTRACE_TRIPLES "C:/Users/paipeng/Documents/zxing-cpp/example/CMakeLists.txt;19;add_test;C:/Users/paipeng/Documents/zxing-cpp/example/CMakeLists.txt;0;")
+elseif("${CTEST_CONFIGURATION_TYPE}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+  add_test(ZXingWriterTest "C:/Users/paipeng/Documents/zxing-cpp/build/example/Release/ZXingWriter.exe" "qrcode" "I have the best words." "test.png")
+  set_tests_properties(ZXingWriterTest PROPERTIES  _BACKTRACE_TRIPLES "C:/Users/paipeng/Documents/zxing-cpp/example/CMakeLists.txt;19;add_test;C:/Users/paipeng/Documents/zxing-cpp/example/CMakeLists.txt;0;")
+elseif("${CTEST_CONFIGURATION_TYPE}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+  add_test(ZXingWriterTest "C:/Users/paipeng/Documents/zxing-cpp/build/example/MinSizeRel/ZXingWriter.exe" "qrcode" "I have the best words." "test.png")
+  set_tests_properties(ZXingWriterTest PROPERTIES  _BACKTRACE_TRIPLES "C:/Users/paipeng/Documents/zxing-cpp/example/CMakeLists.txt;19;add_test;C:/Users/paipeng/Documents/zxing-cpp/example/CMakeLists.txt;0;")
+elseif("${CTEST_CONFIGURATION_TYPE}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+  add_test(ZXingWriterTest "C:/Users/paipeng/Documents/zxing-cpp/build/example/RelWithDebInfo/ZXingWriter.exe" "qrcode" "I have the best words." "test.png")
+  set_tests_properties(ZXingWriterTest PROPERTIES  _BACKTRACE_TRIPLES "C:/Users/paipeng/Documents/zxing-cpp/example/CMakeLists.txt;19;add_test;C:/Users/paipeng/Documents/zxing-cpp/example/CMakeLists.txt;0;")
+else()
+  add_test(ZXingWriterTest NOT_AVAILABLE)
+endif()
